@@ -59,7 +59,7 @@ $*.each do |arg|
 end
 
 # base url for loading the filesof the framework from git
-remote_git_base_uri = "https://raw.githubusercontent.com/Tobias-Fischer-Official/tfr-vagrant/"
+remote_git_base_uri = "https://raw.githubusercontent.com/Tobias-Fischer-Official/tfr-vagrant"
 # this mapping maps local files and files on git, so the filename on both sides doesn't matter
 filename_mapping = [
     { remote: vagrant_main_script_filename, local: vagrant_main_script_filename },
@@ -68,6 +68,8 @@ filename_mapping = [
     { remote: "vagrant-default-config.yml", local: "vagrant-default-config.yml" },
     { remote: "tfr.tools.rb", local: "tfr.tools.rb" }
 ]
+
+puts remote_git_base_uri
 
 # if we have loaded the tools containing our logger
 if tfr_tools_exist

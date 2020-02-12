@@ -36,7 +36,7 @@ vagrant_tfr_path    = "#{current_working_dir}/#{vagrant_tfr_dirname}"
 vagrant_tfr_path    = "#{current_working_dir}"
 vagrant_main_script_filename = "tfr.vagrant.rb"
 # prod is our default environment
-vagrant_environment = "prod"
+vagrant_environment = "master"
 # $* is an array containing all console arguments
 $*.each do |arg|
   # --env is our custom argument
